@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    height: 100px;
+    padding: 36px 100px;
+    font-family: 'Poppins',sans-serif;
+    position: absolute;
+    top: 0;
+}
+
+.sidemenu a{   
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+    padding: 0px 26px;
+    margin: 0px 15px;
+}
+
+.sidemenu a:last-child{
+    color: rgb(243, 12, 12);
+    border-radius: 6px;
+}
+
+.sidemenu a:hover{
+    
+    background: rgb(229, 80, 5);
+    border-radius: 6px;
+    transition: 0.5s linear;
+    padding: 20px 20px;
+
+}
+
+.line{
+    position: absolute;
+    top: 21%;
+    left: 12%;
+}
+
+.box1{
+    width: 18px;
+    height: 6px;
+    background: white;
+}
+
+.box2{
+    width: 80px;
+    height: 6px;
+    background: white;
+}
+
+.box3{
+    width: 140px;
+    height: 6px;
+    background: white;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 160px;
+}
+
+.left{
+    flex-basis: 40%;
+}
+
+.right{
+    flex-basis: 50%;
+
+}
+
+.left h1{
+    font-size: 4rem;
+    line-height: 4rem;
+}
+
+.left h1 span{
+    color: red;
+}
+
+.left button{
+    background: orangered;
+    color: white;
+    font-weight: 700;
+    padding: 15px 20px;
+    margin-top: 39px;
+    border-radius: 5rem;
+    font-size: 30px;
+    transition: background 0.5s;
+    border: none;
+    outline: none;
+}
+
+.left button:hover{
+    background: #ff3e3b;
+    margin-left: 20px;
+    animation: move 3s linear infinite;
+
+
+}
+.right img{
+    width: 100%;
+    -webkit-box-reflect: below 2px linear-gradient(transparent,transparent,#0004);
+
+}
+
+.social-icons{
+    position: absolute;
+    bottom: 70px;
+    left: 130px;
+}
+
+.social-icons img{
+    width: 80px;
+
+}
+
+/* ---------------------------------------css for small screen----------------------------------------- */
+
+@media only screen and(max-width:600px) {
+    
+nav{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100px;
+    padding: 36px 100px;
+    font-family: 'Poppins',sans-serif;
+    position: absolute;
+    top: 0;
+}
+.left h1 {
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+}
+.line {
+    position: absolute;
+    top: 16%;
+    left: 15%;
+}
+
+}
